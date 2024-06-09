@@ -1,23 +1,38 @@
 {
   "name": "learn-nodejs",
   "version": "1.0.0",
-  "description": "Learning Node JS",
-  "main": "index.js",
+  "description": "Learning Node JS with Express JS and MongoDB",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "nodejs",
-    "expressjs"
+    "javascript",
+    "expressjs",
+    "mvc",
+    "rest-api",
+    "mongodb",
+    "mongoose",
+    "boilerplate"
   ],
   "authors": [
-    "Bhargav Raviya"
+    {
+      "name": "Bhargav Raviya",
+      "email": "46953122+bhargavraviya@users.noreply.github.com",
+      "url": "https://github.com/bhargavraviya"
+    }
   ],
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "multer": "^1.4.5-lts.1"
   }
 }
