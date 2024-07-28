@@ -38,6 +38,12 @@ Start the server
   npm run start
 ```
 
+## JWT Token
+
+```bash
+  node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```
+
 ## Tech Stack
 
 **Client:** Coming Soon
