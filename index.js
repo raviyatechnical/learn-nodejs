@@ -2,15 +2,17 @@ const express = require('express');
 const session = require('express-session');
 const dotEnv = require('dotenv');
 const connectMongoDBDatabase = require('./src/database/connections/mongodb');
+const connectSequelizeDatabase = require('./src/database/connections/sequelize');
 const app = express();
-const port = process.env.PORT || 3000;
 dotEnv.config();
+const port = process.env.PORT || 3000;
 const indexRoutes = require('./src/routes/indexRoutes');
 
 //Using Express.JSON
 app.use(express.json());
 
 connectMongoDBDatabase();
+connectSequelizeDatabase();
 
 global.app = express();
 global.secretKey = process.env.JWT_SECRET;

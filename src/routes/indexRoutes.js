@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = express.Router();
-const { register, login, users } = require('../controllers/authController');
-
+const { register, login } = require('../controllers/authController');
+const { users } = require('../controllers/userController');
 routes.get('/', (req, res) => {
   res.json({ message: 'Learning Node JS' });
 });

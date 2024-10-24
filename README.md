@@ -11,14 +11,9 @@ mongodb and chat system using socket
  [![sponsor](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white)](https://github.com/sponsors/bhargavraviya) [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/raviyatechnical/membership) [![Buymeacoffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/raviyatechnical) [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/raviyatechnical)
 -----
 
-## Databases
-
-- MongoDB
-- MySQL (Sequelize)
-
 ## Features
 
-- REST API
+- REST API using MySQL (Sequelize)
 - REST API with Caching using node-cache
 
 ## Run Locally
@@ -72,6 +67,8 @@ Start the server
 
 **Server:** Node, Express
 
+**Database:** MongoDB, MySQL (Sequelize)
+ 
 ## Authors
 
 - [@bhargavraviya](https://www.github.com/bhargavraviya)
