@@ -6,6 +6,7 @@ const connectSequelizeDatabase = async () => {
     console.log(`=============Sequelize========================`);
     console.log('Sequelize Successfully connected to the database.');
     console.log(`Database host: ${sequelize.config.host}`);
+    console.log(`Database port: ${sequelize.config.port}`);
     console.log(`============================================`);
   } catch (error) {
     console.error('Unable to connect to the Sequelize database:', error);

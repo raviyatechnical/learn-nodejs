@@ -18,6 +18,50 @@ mongodb and chat system using socket
 
 ## Run Locally
 
+```
+/project-root
+│── /src
+│   ├── /config
+│   │   ├── database.js        # Sequelize MySQL Connection
+│   │   ├── mongoose.js        # MongoDB Mongoose Connection
+│   ├── /models
+│   │   ├── /sequelize         # Sequelize Models (MySQL)
+│   │   │   ├── index.js       # Sequelize ORM Setup
+│   │   │   ├── user.model.js  # Example Sequelize Model
+│   │   │   ├── order.model.js # Example Sequelize Model
+│   │   ├── /mongoose          # Mongoose Models (MongoDB)
+│   │   │   ├── index.js       # Mongoose Models Import
+│   │   │   ├── category.model.js  # Example Mongoose Model
+│   │   │   ├── product.model.js   # Example Mongoose Model
+│   ├── /enums
+│   │   ├── Status.js          # Common Status Enum
+│   │   ├── UserRole.js        # Common User Role Enum
+│   ├── /migrations            # Sequelize Migrations
+│   ├── /seeders               # Sequelize Seed Data
+│   ├── /repositories          # Data Access Layer (For Clean Code)
+│   │   ├── user.repository.js # Repository for Sequelize (MySQL)
+│   │   ├── category.repository.js # Repository for Mongoose (MongoDB)
+│   ├── /services              # Business Logic Layer
+│   │   ├── user.service.js    # User Service (MySQL)
+│   │   ├── category.service.js # Category Service (MongoDB)
+│   ├── /controllers           # Controllers (Express.js Routes)
+│   │   ├── user.controller.js # Handles Sequelize Models
+│   │   ├── category.controller.js # Handles Mongoose Models
+│   ├── /routes
+│   │   ├── user.routes.js     # Routes for MySQL (Sequelize)
+│   │   ├── category.routes.js # Routes for MongoDB (Mongoose)
+│   ├── /middlewares           # Express.js Middlewares
+│   ├── /utils                 # Helper Functions
+│   ├── app.js                 # Main Express App
+│   ├── server.js              # Start Server
+│── /tests                     # Unit & Integration Tests
+│── .env                       # Environment Variables
+│── package.json               # Dependencies
+│── README.md                  # Project Documentation
+```
+
+## Run Locally
+
 Clone the project
 
 ```bash

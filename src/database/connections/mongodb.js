@@ -11,6 +11,7 @@ const connectMongoDBDatabase = () => {
       console.log(`=============MongoDB========================`)
       console.log(`MongoDB Successfully connected to the database.`);
       console.log(`MongoDB connected: ${mongoose.connection.host}`);
+      console.log(`MongoDB connected: ${mongoose.connection.port}`);
       console.log(`============================================`)
     })
     .catch((err) => {
